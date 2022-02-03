@@ -1,4 +1,4 @@
-package org.kenux.theater;
+package org.kenux.chapter01.theater;
 
 import java.util.ArrayList;
 import java.util.Arrays;

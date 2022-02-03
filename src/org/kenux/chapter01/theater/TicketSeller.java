@@ -1,4 +1,4 @@
-package org.kenux.theater;
+package org.kenux.chapter01.theater;
 
 public class TicketSeller {
 
