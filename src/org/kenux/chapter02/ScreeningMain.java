@@ -34,5 +34,11 @@ public class ScreeningMain {
                 Duration.ofMinutes(210),
                 Money.wons(10000),
                 new NoneDiscountPolicy());
+
+        starWars.changeDiscountPolicy(new PercentDefaultDiscountPolicy(0.1,
+                new PeriodCondition(DayOfWeek.TUESDAY, LocalTime.of(14, 0), LocalTime.of(16, 59)),
+                new SequenceCondition(2),
+                new PeriodCondition(DayOfWeek.TUESDAY, LocalTime.of(10, 0), LocalTime.of(13, 59)))
+        );
     }
 }
