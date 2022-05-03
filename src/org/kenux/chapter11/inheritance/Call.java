@@ -1,4 +1,4 @@
-package org.kenux.chapter11;
+package org.kenux.chapter11.inheritance;
 
 import java.time.Duration;
 import java.time.LocalDateTime;

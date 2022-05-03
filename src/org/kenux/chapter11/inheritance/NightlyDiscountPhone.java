@@ -1,4 +1,4 @@
-package org.kenux.chapter11;
+package org.kenux.chapter11.inheritance;
 
 
 import org.kenux.common.Money;
