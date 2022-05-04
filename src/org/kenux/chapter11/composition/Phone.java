@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public abstract class Phone {
+public class Phone {
 
     private RatePolicy ratePolicy; // interface 에 의존. 합성.
     private final List<Call> calls = new ArrayList<>();
@@ -15,11 +15,11 @@ public abstract class Phone {
         this.ratePolicy = ratePolicy;
     }
 
-    public Money calculateFee() {
-        return ratePolicy.calculateFee(this);
-    }
-
     public List<Call> getCalls() {
         return Collections.unmodifiableList(calls);
+    }
+
+    public Money calculateFee() {
+        return ratePolicy.calculateFee(this);
     }
 }
